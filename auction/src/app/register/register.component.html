@@ -1,0 +1,28 @@
+<mat-drawer-container class="register-nav">
+<mat-drawer mode="side" opened [ngClass]="{'hide':checked ,'sidenav':!checked}">
+        <div class="user">
+            <img src="../../assets/user2.jpg" alt="" class="user-image" >
+            <h4 style="padding-left:10px; padding-top:7px"><span style="font-size: 25px; padding-top: 5px;">User</span></h4>
+        </div>
+        <hr>
+    </mat-drawer>
+    <mat-drawer-content [ngClass]="{'adjust':checked}">
+        <div class="navbar">
+            <input type="checkbox" class="check" id="hamburger" (click)="myhidden()">
+            <div class="ham">
+                <hr class="line1">
+                <hr class="line2">
+                <hr class="line3">
+            </div>
+        </div>
+        <hr>
+        <div class="field">
+            <img src="../assets/user.jpg" alt="" class="flex-img">
+            <img src="../assets/form.png" alt="" class="flex-img">
+            <img src="../assets/achieve.png" alt="" class="flex-img">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <mat-progress-bar mode="determinate" value="40" ></mat-progress-bar>
+    </mat-drawer-content>
+</mat-drawer-container>
